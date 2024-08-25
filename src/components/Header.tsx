@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
     return (
@@ -6,7 +7,7 @@ export default function Header() {
 
             {/* first nav item */}
             <section className="flex flex-row space-x-2">
-                <p>logo</p>
+                <p>Logo</p>
                 <ul>
                     <li>عربی</li>
                     <li>پشتو</li>
@@ -25,12 +26,12 @@ export default function Header() {
                     <Link href="/about">About</Link>
                 </ul>
 
-                <div className="dropdown"> 
+                <div className="dropdown">
                     <button className="dropbtn">Dropdown</button>
                     <div className="dropdown-content">
-                            <Link className="dropLink" href="/">English</Link>
-                            <Link className="dropLink" href="/">Dari</Link>
-                            <Link className="dropLink" href="/">Pashto</Link>
+                        <Link className="dropLink" href="/">English</Link>
+                        <Link className="dropLink" href="/">Dari</Link>
+                        <Link className="dropLink" href="/">Pashto</Link>
                     </div>
                 </div>
 
